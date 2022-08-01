@@ -8,14 +8,17 @@
 </head>
 <body>
     <script>
-        let num = prompt("nhap so");
-        let total = 1;
+        let num = +prompt("nhap so");
+        let total = 0;
+        let i =0
         while(num != -1){
-            num = prompt("nhap so khac");
-            alert(num);
-            total = +num;
+            total = total + num;
+            num = +prompt("nhap so khac");
+            i++;
         }
-        document.write("tong so lan nhap la " + total);
+        document.write("tong so nhap la " + (total-1));
+        document.write('<br/>');
+        document.write("tong so lan nhap la " + i);
     </script>
 </body>
 </html>
