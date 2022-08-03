@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="game_click()">choi</button>
+
+
+   <script>
+        function game_click() {
+            let max_num = +prompt("Nhap vao so lon nhat")
+            let ran_num = Math.ceil(Math.random() * max_num)
+            console.log(ran_num)
+            let user_num = +prompt("So ma ban doan la")
+            for (i=1;i<3;i++){
+                let user_num = +prompt("So ma ban doan la");
+                if (user_num == ran_num){
+                    alert("ban da doan dung");
+                    break;
+                }
+                else{
+                    alert("ban da nahp sai");
+                }
+            } 
+        
+        }
+
+    </script>
+</body>
+</html>
